@@ -6,20 +6,21 @@
     <title>Barbara AFghan Proverbs</title>
     <style>
         body{
-            margin: 0;
-            padding: 0;
+            display:grid;
+            place-items: center;
             background-color: rgb(208, 242, 226);
-            gap: 1rem;
+            flex-wrap:wrap;
         }
 
         nav{
             background-color: #a0beb1;
+            width: 1500px;
+            height: 50px;
             display:flex;
-            flex-wrap: wrap;
-            padding: 1rem;
+            gap: 50px;
             justify-content: center;
             align-items: center;
-            width: 100%;
+           
         }
         .navlink{
             display: flex;
@@ -29,7 +30,7 @@
         }
         a{
             flex: 1 1 auto;
-            padding: 0.5rem 1rem;
+            padding:20px;
             text-decoration: none;
             color: black;
             font-size: large;
@@ -64,8 +65,10 @@
          }
          .featuredproverb {
             display: grid;
-            grid-template-columns: repeat(auto-fill)minmax(350px 350px);
-            gap: 0.625rem;
+            grid-template-columns:350px 350px;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
             font-family:Arial, Helvetica, sans-serif ;
             font-size: 1.25rem;
          }
@@ -80,15 +83,18 @@
          }
 
          .first{
+            position: relative;
+            cursor: pointer;
             display: flex;
-            flex-wrap: wrap;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            border-radius: 0.625rem;
-            box-shadow: 0 0.8rem 1rem black;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px black;
             transition: all 0.3s ease ;
-            padding: 0.625rem;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+
          }
 
          .first:hover{
@@ -112,7 +118,7 @@
     <header>
         <nav>
             <div class="navlink">
-            <a href="indext.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="gallery.html">Gallery</a>
             <a href="wall.html">Interactive wall</a>
             </div>
@@ -133,7 +139,7 @@
             <h2>Featured Proverbs:</h2> <br>
             <div class="featuredproverb">
                 <span class="first">
-                    <img  class="pro" src="5894e840-14cd-11f0-929a-c9c985ffe9e0.webp" alt="">
+                    <img  class="pro" src="5894e840-14cd-11f0-929a-c9c985ffe9e0.webp" alt="" width="300px" height="300px">
                     <ul>
                      <li>قطره قطره جمع گردد، وانگهی دریا شود</li>
                      <li> Drop by drop, a river is made.</li>
@@ -141,7 +147,7 @@
                    </ul>
                 </span> 
                 <span class="first">
-                    <img class="pro" src="Adame-tanbal.jpg" alt="A lazy person" >
+                    <img class="pro" src="Adame-tanbal.jpg" alt="A lazy person" width="300px" height="300px">
                     <ul>
                         <li> ادم تنبل، عقل چهل وزیر را دارد.</li>
                         <li>A lazy person has the wisdom of forty ministers.</li>
