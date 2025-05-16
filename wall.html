@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbara Afghan Proverbs</title>
+    <style> 
+    body{
+            display:grid;
+            place-items: center;
+            background-color: rgb(208, 242, 226);
+            gap: 20px;
+        }
+     nav{
+            background-color: #a0beb1;
+            width: 1500px;
+            height: 50px;
+            display:flex;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: large;
+
+        }
+        a:hover{
+            color:white;
+            transform: scale(1.05);
+        }
+        h2{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+        }
+        form{
+            display:grid;
+            gap: 20px;
+            flex-wrap:wrap;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .in{
+            border-color: black;
+            border-style: dotted;
+            border-radius: 10px;
+        }
+        button{
+            background-color: aquamarine;
+        }
+        footer{
+            background-color:#a0beb1;
+            width: 1500px;
+            height: 100px;
+            display: grid;
+            grid-template-columns: 30px 30px 30px 30px 60px;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="indext.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="wall.html">Interactive wall</a>
+        </nav>
+    </header>
+    <h2>Add one of your country's proverbs here</h2>
+    <form action="">
+         <label for="name"> Name</label>
+         <input class="in" type="text" id="name" required>
+         <label for="email">Email</label>
+         <input class="in" type="text" id="email"required>
+         <label for="proverb">The proverb in your language</label>
+         <input class="in" type="text" id="proverb" required>
+         <label for="Meaning">Explanation</label>
+         <textarea class="in" name="" id="Meaning"></textarea>
+         <button class="in"> submit </button>
+    </form>
+    <footer>
+        <img src="download.png" alt="telegram" width="30px" height="30px">
+        <img src="download.jpg" alt="instagram" width="30px" height="30px" >
+        <img src="download (1).jpg" alt="" width="30px" height="30px">
+        <img src="download (1).png" alt="" width="30px" height="30px">
+        <p>Join us on social media.</p>
+        </footer>
+        
+    
+</body>
+</html>
